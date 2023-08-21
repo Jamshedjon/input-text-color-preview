@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <style>
+    
+    *{
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+    
+    .container{
+      width: 100%;
+      max-width: 1200px;
+      height: 100vh; 
+      padding: 0 60px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;  
+      position: relative; 
+    }
+    input{
+      width: 480px;
+      font-weight: 600;      
+    }
+    input {
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      font-size: 30px;
+      color: #555;
+      outline: none;
+    }
+    
+    input:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+    label{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    h1{
+      margin: 30px;
+    }
+    h1{ 
+      font-size: 50px;
+      text-align: center;
+    }
+    #span1{
+      color: red;
+    }
+    #span2{
+      color: green;
+          }
+    #span3{
+      color: blue;
+
+    }
+  </style>
+  <div class="container">
+    <h1>Yozuvni kiriting *abc*,#abc#,$abc$</h1>
+    <form id="input" aria-autocomplete="on">
+      
+      
+      <input  placeholder="Type text here" type="text"  value="*abc*#abc#$abc$">
+      
+    </form>  
+    <div class="title-wrap">
+      <h1 id="title">
+        <span id="span1">abc</span>
+        <span id="span2">abc</span>
+        <span id="span3">abc</span>
+      </h1> 
+    </div> 
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
